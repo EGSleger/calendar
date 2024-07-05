@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="main">
+            <h1 class="main_h1">Июнь 2024</h1>
+            <div class="calendar_container">
+                <div class="calendar_row">
+                    <div id="june1" class="calindar_peace">1</div>
+                    <div id="june2" class="calindar_peace">2</div>
+                    <div id="june3" class="calindar_peace">3</div>
+                    <div id="june4" class="calindar_peace">4</div>
+                </div>
+                <div class="calendar_row">
+                    <div id="june5" class="calindar_peace">5</div>
+                    <div id="june6" class="calindar_peace">6</div>
+                    <div id="june7" class="calindar_peace">7</div>
+                    <div id="june8" class="calindar_peace busy">8</div>
+                </div>
+                <div class="calendar_row">
+                    <div id="june9" class="calindar_peace">9</div>
+                    <div id="june10" class="calindar_peace">10</div>
+                    <div id="june11" class="calindar_peace">11</div>
+                    <div id="june12" class="calindar_peace">12</div>
+                </div>
+                <div class="calendar_row">
+                    <div id="june13" class="calindar_peace">13</div>
+                    <div id="june14" class="calindar_peace">14</div>
+                    <div id="june15" class="calindar_peace">15</div>
+                    <div id="june16" class="calindar_peace">16</div>
+                </div>
+                <div class="calendar_row">
+                    <div id="june17" class="calindar_peace">17</div>
+                    <div id="june18" class="calindar_peace">18</div>
+                    <div id="june19" class="calindar_peace">19</div>
+                    <div id="june20" class="calindar_peace">20</div>
+                </div>
+                <div class="calendar_row">
+                    <div id="june21" class="calindar_peace">21</div>
+                    <div id="june22" class="calindar_peace">22</div>
+                    <div id="june23" class="calindar_peace">23</div>
+                    <div id="june24" class="calindar_peace">24</div>
+                </div>
+            </div>
+        </section>
+        <section id="modalTime" class="modal_time">
+            <div class="modal_time_window">
+                <div id="close_btn1" class="close_btn">x</div>
+                <h2 class="modal_time_h2">Июнь 9</h2>
+                <div class="time_cards_container">
+                    <div id="time_card1" class="time_card ">Свободно - 12:00 - 13:00</div>
+                    <div id="time_card2" class="time_card">Свободно - 13:00 - 14:00</div>
+                    <div id="time_card3" class="time_card busy">Занято - 14:00 - 15:00</div>
+                    <div id="time_card4" class="time_card">Свободно - 15:00 - 16:00</div>
+                    <div id="time_card5" class="time_card">Свободно - 16:00 - 17:00</div>
+                    <div id="time_card6" class="time_card">Свободно - 17:00 - 18:00</div>
+                </div>
+            </div>
+        </section>
+        <section id="modal_reg" class="modal_reg">
+            <div class="modal_reg_window">
+                <div id="close_btn2" class="close_btn">x</div>
+                <form class="reg_form" action="#" name="submit-to-google-sheet">
+                    <div class="input_conteiner">
+                        <input name="FIO" autocomplete="off" id="FIO" class="input" type="text" placeholder="ФИО"
+                            required>
+                        <input name="Number" autocomplete="off" id="Number" class="input" type="text"
+                            placeholder="Номер телефона" required>
+                    </div>
+                    <button id="reg_btn" type="submit" class="reg_btn">Записаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

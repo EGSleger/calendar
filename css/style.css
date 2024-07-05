@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Intro';
+    src: local("Intro"),
+        url('../fonts/4488-font.otf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: local("Roboto_regular"),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: local("Roboto_medium"),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_bold';
+    src: local("Roboto_bold"),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_black';
+    src: local("Roboto_black"),
+        url('../fonts/Roboto-Black.ttf') format('truetype');
+
+}
+
+main {
+    width: 380px;
+    height: 1000px;
+    display: flex;
+}
+
+
+.main{
+    height: 720px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_h1{
+    color: #57AC6C;
+    font-size: 40px;
+    font-family: 'Intro';
+    margin-top: 30px;
+}
+
+.calendar_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 345px;
+    margin-top: 43px;
+}
+
+.calendar_row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 21px;
+}
+.calindar_peace{
+    width: 75px;
+    height: 75px;
+    background-color: #57AC6C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Roboto_regular';
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+
+.calindar_peace:active{
+    transform: scale(1.1);
+}
+
+.modal_time{
+    width: 380px;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.modal_time_window{
+    width: 344px;
+    height: 586px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin-left: 18px;
+    margin-top: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #57AC6C;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Roboto_medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    transition: ease 0.25s;
+}
+
+.close_btn:hover{
+    border: solid 2px #57AC6C;
+    background-color: #ffffff;
+    color: #57AC6C;
+}
+.close_btn:active{
+    transform: scale(1.1);
+}
+
+.modal_time_h2{
+    font-size: 36px;
+    color: #57AC6C;
+    font-family: 'Intro';
+    margin-top: 43px;
+}
+
+.time_cards_container{
+    width: 305px;
+    height: 412px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.time_card{
+    width: 305px;
+    height: 52px;
+    background-color: #57AC6C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Roboto_medium';
+    margin-top: 20px;
+    transition: ease 0.25s;
+}
+.time_card:active{
+    transform: scale(1.1);
+}
+
+.modal_reg{
+    width: 380px;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal_reg_window{
+    width: 304px;
+    height: 323px;
+    border-radius: 48px;
+    box-shadow: 0 0 20px 0 #999;
+    background-color: white;
+    z-index: 111;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 170px;
+    position: fixed;
+}
+#close_btn2{
+    left: 80%;
+}
+
+.input{
+    width: 264px;
+    height: 50px;
+    border: #57AC6C solid 2px;
+    border-radius: 19px;
+    font-size: 22px;
+    font-family: 'Roboto_regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.input::placeholder {
+    color: #57AC6C;
+}
+
+input{
+    color: #57AC6C;
+}
+
+.reg_btn{
+    width: 264px;
+    height: 50px;
+    background-color: #57AC6C;
+    color: white;
+    font-family: 'Roboto_black';
+    font-size: 22px;
+    border-radius: 19px;
+    transition: 0.3s ease;
+    margin-top: 43px;
+}
+.reg_btn:hover{
+    background-color: #ffffff;
+    color: #57AC6C;
+    border: 2px solid #57ac6c;
+}
+
+.reg_btn:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+.busy{
+    background-color: #ffffff;
+    border: solid 2px #57AC6C;
+    color: #57AC6C;
+}
+.open{
+    visibility: visible;
+    opacity: 1;
+}
